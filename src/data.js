@@ -169,7 +169,7 @@ const data = [{
     },
     {
     id:'klr650',
-    name:'',
+    name:'KLR 650',
     thumb:klr650_thumb,
     def:klr650_def,
     imgs:[klr650_1,klr650_2,klr650_3],
@@ -180,7 +180,7 @@ const data = [{
     },
     {
     id:'ninja400',
-    name:'',
+    name:'Ninja 400',
     thumb:ninja400_thumb,
     def:ninja400_def,
     imgs:[ninja400_1,ninja400_2,ninja400_3],
@@ -191,7 +191,7 @@ const data = [{
     },
     {
     id:'ninja650',
-    name:'',
+    name:'Ninja 650',
     thumb:ninja650_thumb,
     def:ninja650_def,
     imgs:[ninja650_1,ninja650_2,ninja650_3],
@@ -203,7 +203,7 @@ const data = [{
 
     {
     id:'ninja1000sx',
-    name:'',
+    name:'Ninja 1000 SX',
     thumb:ninja1000sx_thumb,
     def:ninja1000sx_def,
     imgs:[ninja1000sx_1,ninja1000sx_2,ninja1000sx_3],
@@ -214,7 +214,7 @@ const data = [{
     },
     {
     id:'ninjah2',
-    name:'',
+    name:'Ninja H2',
     thumb:ninjah2_thumb,
     def:ninjah2_def,
     imgs:[ninjah2_1,ninjah2_2,ninjah2_3],
@@ -229,7 +229,7 @@ const data = [{
     },
     {
     id:'ninjah2r',
-    name:'',
+    name:'Ninja H2R',
     thumb:ninjah2r_thumb,
     def:ninjah2r_def,
     imgs:[ninjah2r_1,ninjah2r_2,ninjah2r_3],
@@ -244,7 +244,7 @@ const data = [{
     },
     {
     id:'ninjah2sx',
-    name:'',
+    name:'Ninja H2 SX',
     thumb:ninjah2sx_thumb,
     def:ninjah2sx_def,
     imgs:[ninjah2sx_1,ninjah2sx_2,ninjah2sx_3],
@@ -258,7 +258,7 @@ const data = [{
     },
     {
     id:'ninjazx6r',
-    name:'',
+    name:'Ninja ZX6R',
     thumb:ninjazx6r_thumb,
     def:ninjazx6r_def,
     imgs:[ninjazx6r_1,ninjazx6r_2,ninjazx6r_3],
@@ -273,7 +273,7 @@ const data = [{
     },
     {
     id:'ninjazx10r',
-    name:'',
+    name:'Ninja ZX10R',
     thumb:ninjazx10r_thumb,
     def:ninjazx10r_def,
     imgs:[ninjazx10r_1,ninjazx10r_2,ninjazx10r_3],
@@ -287,7 +287,7 @@ const data = [{
     },
     {
     id:'ninjazx14r',
-    name:'',
+    name:'Ninja ZX14R',
     thumb:ninjazx14r_thumb,
     def:ninjazx14r_def,
     imgs:[ninjazx14r_1,ninjazx14r_2,ninjazx14r_3],
@@ -300,7 +300,7 @@ const data = [{
     },
     {
     id:'versys650',
-    name:'',
+    name:'Versys 650',
     thumb:versys650_thumb,
     def:versys650_def,
     imgs:[versys650_1,versys650_2,versys650_3],
@@ -314,7 +314,7 @@ const data = [{
     },
     {
     id:'versys1000lt',
-    name:'',
+    name:'Versys 1000 LT',
     thumb:versys1000lt_thumb,
     def:versys1000lt_def,
     imgs:[versys1000lt_1,versys1000lt_2,versys1000lt_3],
@@ -329,7 +329,7 @@ const data = [{
     },
     {
     id:'versysx300',
-    name:'',
+    name:'Versys X 300',
     thumb:versysx300_thumb,
     def:versysx300_def,
     imgs:[versysx300_1,versysx300_2,versysx300_3],
@@ -342,7 +342,7 @@ const data = [{
     },
     {
     id:'vulcan900',
-    name:'',
+    name:'Vulcan 900',
     thumb:vulcan900_thumb,
     def:vulcan900_def,
     imgs:[vulcan900_1,vulcan900_2,vulcan900_3],
@@ -356,7 +356,7 @@ const data = [{
     },
     {
     id:'vulcan1700vaquero',
-    name:'',
+    name:'Vulcan 1700 Vaquero',
     thumb:vulcan1700vaquero_thumb,
     def:vulcan1700vaquero_def,
     imgs:[vulcan1700vaquero_1,vulcan1700vaquero_2,vulcan1700vaquero_3],
@@ -367,7 +367,7 @@ const data = [{
     },
     {
     id:'vulcan1700voyager',
-    name:'',
+    name:'Vulcan 1700 Voyager',
     thumb:vulcan1700voyager_thumb,
     def:vulcan1700voyager_def,
     imgs:[vulcan1700voyager_1,vulcan1700voyager_2,vulcan1700voyager_3],
@@ -380,7 +380,7 @@ const data = [{
     },
     {
     id:'vulcans',
-    name:'',
+    name:'Vulcan S',
     thumb:vulcans_thumb,
     def:vulcans_def,
     imgs:[vulcans_1,vulcans_2,vulcans_3],
@@ -393,7 +393,7 @@ const data = [{
     },
     {
     id:'w800',
-    name:'',
+    name:'W800',
     thumb:w800_thumb,
     def:w800_def,
     imgs:[w800_1,w800_2,w800_3],
@@ -407,7 +407,7 @@ const data = [{
     },
     {
     id:'z125',
-    name:'',
+    name:'Z 125',
     thumb:z125_thumb,
     def:z125_def,
     imgs:[z125_1,z125_2,z125_3],
@@ -421,7 +421,7 @@ const data = [{
     },
     {
     id:'z400',
-    name:'',
+    name:'Z 400',
     thumb:z400_thumb,
     def:z400_def,
     imgs:[z400_1,z400_2,z400_3],
@@ -433,7 +433,7 @@ const data = [{
     },
     {
     id:'z650',
-    name:'',
+    name:'Z 650',
     thumb:z650_thumb,
     def:z650_def,
     imgs:[z650_1,z650_2,z650_3],
@@ -447,7 +447,7 @@ const data = [{
     },
     {
     id:'z650rs',
-    name:'',
+    name:'Z 650 RS',
     thumb:z650rs_thumb,
     def:z650rs_def,
     imgs:[z650rs_1,z650rs_2,z650rs_3],
@@ -460,7 +460,7 @@ const data = [{
     },
     {
     id:'z900',
-    name:'',
+    name:'Z 900',
     thumb:z900_thumb,
     def:z900_def,
     imgs:[z900_1,z900_2,z900_3],
@@ -474,7 +474,7 @@ const data = [{
     },
     {
     id:'z900rs',
-    name:'',
+    name:'Z 900 RS',
     thumb:z900rs_thumb,
     def:z900rs_def,
     imgs:[z900rs_1,z900rs_2,z900rs_3],
@@ -488,7 +488,7 @@ const data = [{
     },
     {
     id:'zh2',
-    name:'',
+    name:'Z H2',
     thumb:zh2_thumb,
     def:zh2_def,
     imgs:[zh2_1,zh2_2,zh2_3],
@@ -501,3 +501,5 @@ const data = [{
         'HIGH-SPEC BREMBO® BRAKES'],
     price:18500
     }]
+
+    export default data
