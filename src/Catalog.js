@@ -1,27 +1,29 @@
-import React from 'react'
-import {Link,Outlet} from 'react-router-dom'
-import './catalog.css'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import {useState } from 'react'
+import "./catalog.css";
+import Navbar from "./Navbar";
+import Banner from "./Banner";
+import Footer from "./Footer";
+import Sidenav from "./Sidenav";
+import ShoppingCart from "./ShoppingCart"
 
-function Catalog({bikeChoice}) {
+function Catalog() {
+const [query,setQuery] = useState('')
+const [cart,setCart] = useState([])
   return (
-    <>    <div className='catalog'>CATALOG ROUTE</div>
-    <br></br>
-    <nav>
-        <Link to="/">Home</Link>
-        <Link to="/catalog/allbikes">Shop </Link>
-        <Link to="">Search Query Bar </Link>
-        <Link to="">Shopping Cart </Link>
+<div className="catalog">
+      <Banner />
+      <Navbar query={query} setQuery={setQuery} />
 
-    </nav>
-
-<br></br>
-    <div>
-        <Outlet />
-    </div>
-
-    <div className='filterNav'>FILTER NAV BY TYPE</div>
-    </>
-  )
+      <div className="mainContent">
+        <Sidenav query={query} setQuery={setQuery} />
+        <Outlet context={[query,setQuery]}/>
+        <ShoppingCart cart={cart}/>
+      </div>
+      <Footer />
+</div>
+  );
 }
 
-export default Catalog
+export default Catalog;

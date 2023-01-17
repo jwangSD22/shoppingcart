@@ -15,7 +15,7 @@ for (let item of data){
 
 
   return (
-    <div>
+    <div className="bikeDisplay">
         {currentBike.name}
         <img src={currentBike.def} alt={currentBike.id}></img>
     </div>
