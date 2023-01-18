@@ -11,7 +11,7 @@ const onChangeHandler = (e) =>{
      <nav>
     <Link to="/">Home</Link>
     <Link to="/catalog/allbikes">Shop </Link>
-    <label for="search"> Search by Name</label>
+    <label htmlFor="search"> Search by Name</label>
     <input type='search' name="search" onChange={onChangeHandler} value={query}></input>
     <Link to="">Shopping Cart </Link>
   </nav>

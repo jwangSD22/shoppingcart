@@ -18,8 +18,8 @@ const [cart,setCart] = useState([])
 
       <div className="mainContent">
         <Sidenav query={query} setQuery={setQuery} />
-        <Outlet context={[query,setQuery]}/>
-        <ShoppingCart cart={cart}/>
+        <Outlet context={[query,setQuery,cart,setCart]}/>
+        <ShoppingCart cart={cart} setCart={setCart}/>
       </div>
       <Footer />
 </div>
