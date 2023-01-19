@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 import {v4} from 'uuid'
+import ItemInCart from './ItemInCart'
 
 
 //right now, the useeffect hook is picking up any changes in the cart to create a whole BRAND NEW ARRAY every single time there is a change. 
@@ -51,36 +52,20 @@ const getPrice = () => {
 return total.toLocaleString('en-US');
 }
 
-const handleIncClick = (item) => {
-    console.log('click INC registered')
-    setCart([...cart,item.bike])
-}
 
-const handleDecClick = (item) => {
-    console.log('click DEC registered')
-    let copy  = [...cart]
-    let indexOfFound = copy.findIndex(el=>el.id===item.id)
-    copy.splice(indexOfFound,1)
-    console.log(copy)
-    setCart(copy)
-}
 
 return (
     <div>
         SHOPPING CART HERE
         <br></br>
-    {cart.map(item=><li key={v4()}>{item.id}</li>)}
+{/* implement component  */}
 
-    <span>BOOTYBOOTYBOOTYBOOTYBOOTYBOOTYBOOTY</span>
+{cart.length>0?final.map(item=>
+    <ItemInCart key={v4()} src={item.thumb} id={item.id} count={item.count} item={item} cart={cart} setCart={setCart}/>
+    ):<div>EMPTY CART!!!!!!!!</div>}
 
-    {final.map(item=>
-   
-    <li key={v4()}> <img src={item.thumb}></img> {item.id} - COUNT:{item.count} 
-    <button name={item.id} onClick={()=>{handleIncClick(item)}}>INC</button>
-    <button name={item.id} onClick={()=>{handleDecClick(item)}}>DEC</button>
 
-    
-    </li>)}
+
 
 
     <div>Price- ${getPrice()}.00</div>
@@ -89,3 +74,10 @@ return (
 }
 
 export default ShoppingCart
+
+
+
+
+// ACCESSORY TOOL FUNCTION :: this line will map everything in the cart in list format
+// easier to display what's in the cart array
+    {/* {cart.map(item=><li key={v4()}>{item.id}</li>)} */}
