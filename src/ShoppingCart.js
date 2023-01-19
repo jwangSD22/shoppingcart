@@ -25,7 +25,8 @@ if(!finalCart.find(el=>el.id===item.id)){
     'name':item.name,
     'price':item.price,
     'count':1,
-    'thumb':item.thumb
+    'thumb':item.thumb,
+    'bike':item
     }])
 
 
@@ -40,10 +41,29 @@ if(!finalCart.find(el=>el.id===item.id)){
 }
 setFinal(finalCart)
 
-},[cart])
+},[cart,setCart])
 
+const getPrice = () => {
+    let total = 0
+    for(let item of cart){
+        total += item.price
+    }
+return total.toLocaleString('en-US');
+}
 
+const handleIncClick = (item) => {
+    console.log('click INC registered')
+    setCart([...cart,item.bike])
+}
 
+const handleDecClick = (item) => {
+    console.log('click DEC registered')
+    let copy  = [...cart]
+    let indexOfFound = copy.findIndex(el=>el.id===item.id)
+    copy.splice(indexOfFound,1)
+    console.log(copy)
+    setCart(copy)
+}
 
 return (
     <div>
@@ -56,13 +76,14 @@ return (
     {final.map(item=>
    
     <li key={v4()}> <img src={item.thumb}></img> {item.id} - COUNT:{item.count} 
-    {/* <button name={item.id} onClick={cartIncHandler}>INC</button>
-    <button name={item.id} onClick={cartDecHandler}>DEC</button> */}
+    <button name={item.id} onClick={()=>{handleIncClick(item)}}>INC</button>
+    <button name={item.id} onClick={()=>{handleDecClick(item)}}>DEC</button>
 
     
     </li>)}
 
 
+    <div>Price- ${getPrice()}.00</div>
     </div>
   )
 }
