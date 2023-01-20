@@ -10,7 +10,7 @@ const onChangeHandler = (e) =>{
   return (
      <nav>
     <Link to="/">Home</Link>
-    <Link to="/catalog/allbikes">Shop </Link>
+    <Link to="/catalog/allbikes" onClick={()=>{setQuery('')}}>Shop</Link>
     <label htmlFor="search"> Search by Name</label>
     <input type='search' name="search" onChange={onChangeHandler} value={query}></input>
     <Link to="">Shopping Cart </Link>

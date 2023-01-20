@@ -51,7 +51,7 @@ function ShoppingCart({ cart, setCart }) {
   };
 
   return (
-    <div>
+    <div className="shoppingCart">
       SHOPPING CART HERE
       <br></br>
       {/*CONDITIONAL RENDERING*/}

@@ -361,9 +361,11 @@ const data = [{
     def:vulcan1700vaquero_def,
     imgs:[vulcan1700vaquero_1,vulcan1700vaquero_2,vulcan1700vaquero_3],
     banner:vulcan1700vaquero_banner,
-    overview:'tbd',
-    features:'tbd',
-    price:'tbd'
+    overview:'The Vulcan® 1700 Vaquero® cruiser may look like a custom V-twin bagger, but this motorcycle is in a class of its own. A roaring 1,700cc engine featuring advanced Kawasaki technology offers a smooth, reassuring ride. The blacked-out engine, distinct bodywork styling and select chrome accents create a unique and bold appearance.',
+    features:['FUEL-INJECTED 52-DEGREE 1,700cc V-TWIN ENGINE',
+        'ELECTRONIC CRUISE CONTROL SYSTEM',
+        'KAWASAKI ADVANCED COACTIVE-BRAKING TECHNOLOGY (K-ACT II) ABS]'],
+    price:18599
     },
     {
     id:'vulcan1700voyager',
@@ -372,11 +374,11 @@ const data = [{
     def:vulcan1700voyager_def,
     imgs:[vulcan1700voyager_1,vulcan1700voyager_2,vulcan1700voyager_3],
     banner:vulcan1700voyager_banner,
-    overview:'The Vulcan® 1700 Vaquero® cruiser may look like a custom V-twin bagger, but this motorcycle is in a class of its own. A roaring 1,700cc engine featuring advanced Kawasaki technology offers a smooth, reassuring ride. The blacked-out engine, distinct bodywork styling and select chrome accents create a unique and bold appearance.',
+    overview:'The Vulcan® 1700 Voyager® is the king of Kawasaki touring cruisers. A 1,700cc digitally fuel-injected V-twin engine plus Kawasaki Advanced Coactive-braking Technology (K-ACT II) ABS and electronic cruise control help make the Vulcan 1700 Voyager the pinnacle of power and luxury on the open road. ',
     features:['FUEL-INJECTED 52-DEGREE 1,700cc V-TWIN ENGINE',
         'ELECTRONIC CRUISE CONTROL SYSTEM',
         'KAWASAKI ADVANCED COACTIVE-BRAKING TECHNOLOGY (K-ACT II) ABS'],
-    price:18599
+    price:19299
     },
     {
     id:'vulcans',

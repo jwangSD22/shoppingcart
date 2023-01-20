@@ -11,13 +11,16 @@ const handleClick = (e) => {
 }
 
   return (
-    <div>
+    <div className='sideNav'>
+      <div className='sideNavHeader'><h3>[STREET/TRACK]</h3></div>
       <div onClick={handleClick}>Ninja</div>
+      <div className='sideNavHeader'><h3>[STREET]</h3></div>
       <div onClick={handleClick}>Z</div>
       <div onClick={handleClick}>Versys</div>
       <div onClick={handleClick}>W</div>
       <div onClick={handleClick}>Concours</div>
       <div onClick={handleClick}>Vulcan</div>
+      <div className='sideNavHeader'><h3>[DUAL-SPORT]</h3></div>
       <div onClick={handleClick}>KLR</div>
 
 
