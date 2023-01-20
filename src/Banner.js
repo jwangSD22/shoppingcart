@@ -1,10 +1,10 @@
 import React from 'react'
-import banner from './images/banner.jpeg'
-import bannerCont from './images/banner_cont.jpeg'
+import banner from './images/banner_small2.jpg'
+
 
 function Banner() {
   return (
-    <div className='bannerDiv'><img className='banner' src={banner} /><img className='banner' src={bannerCont} /></div>
+    <div className='bannerDiv'><img className='banner' src={banner} /></div>
   )
 }
 

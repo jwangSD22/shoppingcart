@@ -70,7 +70,9 @@ function ShoppingCart({ cart, setCart }) {
       ) : (
         <div>!!!!!!!!!!!!!!!!!!!!!!!!!!EMPTY CART!!!!!!!!!!!!!!!!!</div>
       )}
-      <div>Price- ${getPrice()}.00</div>
+      <div>Total - ${getPrice()}.00</div>
+      <div>Proceed to payment button</div>
+      <div>Back to shop</div>
     </div>
   );
 }

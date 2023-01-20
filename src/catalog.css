@@ -1,6 +1,6 @@
 nav{
     position:relative;
-    top:-50px;
+    top:-20px;
     display:flex;
     background-color: black;
     justify-content: space-evenly;
@@ -8,15 +8,16 @@ nav{
 }
 
 .banner{
-    max-width:50%;
+    width:100%;
     height:auto
 }
 
 
 
 .bikeDisplay{
-    width:80%;
-    height:100%;
+    background-color: #e5e4e9;
+    width:100%;
+    min-height:80vh;
     display:flex;
     flex-wrap: wrap;
     
@@ -27,21 +28,24 @@ nav{
     position:relative;
     top:-10px;
     display:flex;
+    
 }
 
 .shoppingCart{
+   
     background-color: aqua;
-    opacity:50%;
-    display:flex;
+    opacity:20%;
+    display:none;
     flex-direction: column;
-    width:25%;
+    height:80vh;
+    width:30%;
     right:50px;
     position:fixed;
 }
 
 
 .sideNav{
-    background-color: #e5e4e9;
+    background-color: black;
     width:10%;
     display:flex;
     flex-direction: column;
@@ -89,4 +93,48 @@ h2{
     text-shadow: 1px 1px 2px black;
 
     color:white;
+}
+
+.bikeBanner{
+    width:85%;
+    height:auto;
+}
+
+.bikeBannerbg{
+    width:100%;
+    background-color: black;
+}
+
+.bannerTitle{
+    position:relative;
+    height:0px;
+    top: 40%;
+    left:8%;
+    color:white;
+    font-size:5vh;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px white;
+    font-style: italic;
+    text-decoration-line: underline;
+
+}
+
+.bikeOverview{
+    position:relative;
+    top:
+}
+
+a:hover{
+    background-color: aqua;
+}
+
+a:visited{
+   color:black;
+   text-decoration: none;
+
+}
+
+a{
+    color:black;
+    text-decoration: none;
 }
