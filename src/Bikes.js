@@ -9,7 +9,11 @@ const array = []
 const inputToArray = (item) => { array.push(
   <div key={item.id} className="bikeThumbDiv">
        <Link to={`/catalog/${item.id}`}><img src={item.thumb} alt={item.id} /></Link>
-      <Link to={`/catalog/${item.id}`}>{item.name}</Link>
+       <br />
+      {/* <Link to={`/catalog/${item.id}`}>{item.name}</Link> */}
+      <span className='thumbName'>{item.name}</span>
+      
+      <span className='thumbPrice'>Starting at ${item.price.toLocaleString('en-us')}</span>
   </div>
 )}
 
@@ -29,7 +33,9 @@ for (let item of filteredArr){
 }
 
   return (
-    <div className ="bikeDisplay">{array}</div>
+    <div className ="bikeDisplay">
+      <div className='bikeGrid'>{array}</div>
+      </div>
   )
 }
 

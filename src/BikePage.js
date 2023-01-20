@@ -34,14 +34,23 @@ for (let item of data){
       <img className='bikeBanner' src={currentBike.banner} />
       </div>
        
+       <div className="bikeInfo">
+        <div className="bikeTop">
         <div className='bikeOverview'>{currentBike.overview}</div>
-        <ul>
+        <img src={currentBike.def} alt={currentBike.id}></img>
+        </div>
+       
+       <div className="bikeBottom">
+       <ul>
           {currentBike.features.map(item=>
             <li>{item}</li>)}
           </ul>
-        <img src={currentBike.def} alt={currentBike.id}></img>
+        
         <button onClick={increaseHandler}>Add to Cart</button>
+       </div>
+
         <br></br>
+        </div>
        
     </div>
   )
