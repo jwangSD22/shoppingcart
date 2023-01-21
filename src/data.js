@@ -408,7 +408,7 @@ const data = [{
     price:9999
     },
     {
-    id:'z125',
+    id:'z 125',
     name:'Z 125',
     thumb:z125_thumb,
     def:z125_def,
@@ -422,7 +422,7 @@ const data = [{
     price:3399
     },
     {
-    id:'z400',
+    id:'z 400',
     name:'Z 400',
     thumb:z400_thumb,
     def:z400_def,
@@ -434,7 +434,7 @@ const data = [{
     price:5399
     },
     {
-    id:'z650',
+    id:'z 650',
     name:'Z 650',
     thumb:z650_thumb,
     def:z650_def,
@@ -448,7 +448,7 @@ const data = [{
     price:7749
     },
     {
-    id:'z650rs',
+    id:'z 650rs',
     name:'Z 650 RS',
     thumb:z650rs_thumb,
     def:z650rs_def,
@@ -461,7 +461,7 @@ const data = [{
     price:9099
     },
     {
-    id:'z900',
+    id:'z 900',
     name:'Z 900',
     thumb:z900_thumb,
     def:z900_def,
@@ -475,7 +475,7 @@ const data = [{
     price:9699
     },
     {
-    id:'z900rs',
+    id:'z 900rs',
     name:'Z 900 RS',
     thumb:z900rs_thumb,
     def:z900rs_def,
@@ -489,7 +489,7 @@ const data = [{
     price:9099
     },
     {
-    id:'zh2',
+    id:'z h2',
     name:'Z H2',
     thumb:zh2_thumb,
     def:zh2_def,
