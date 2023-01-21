@@ -1,19 +1,20 @@
 import React from "react";
 import data from "./data";
 import { useParams, useOutletContext } from "react-router-dom";
-import { useState } from "react";
 import RotatingImg from "./RotatingImg";
-import { current } from "immer";
 
 function BikePage() {
-  const [query, setQuery, cart, setCart] = useOutletContext();
+  const [query, setQuery, cart, setCart,disabled,setDisabled] = useOutletContext();
   const { id } = useParams();
 
   const increaseHandler = () => {
     setCart([...cart, currentBike]);
+const myCart = document.getElementsByClassName('shoppingCart')
+console.log(myCart)
+myCart[0].style.display = "flex"
+setDisabled(true)
 
-    //function to slide in shopping cart after adding//
-  };
+  }
 
   let currentBike;
   for (let item of data) {
@@ -23,7 +24,7 @@ function BikePage() {
   }
 
   return (
-    <div className="bikePageDisplay">
+    <div style={disabled ? {pointerEvents: "none", opacity: "0.4", overflow:"hidden"} : {}} className="bikePageDisplay">
       <div className="bikeBannerbg">
         <div className="bannerTitle">{currentBike.name}</div>
         <img className="bikeBanner" src={currentBike.banner} />
@@ -40,7 +41,7 @@ function BikePage() {
           <div className="featureLeft">
             <ul>
               {currentBike.features.map((item) => (
-                <li className="featureList" key={item.id}>
+                <li key={item} className="featureList">
                   {item}
                 </li>
               ))}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Sidenav({setQuery}) {
+function Sidenav({disabled,setQuery}) {
 
 const navigate = useNavigate()
 
@@ -11,7 +11,7 @@ const handleClick = (e) => {
 }
 
   return (
-    <div className='sideNav'>
+    <div style={disabled ? {pointerEvents: "none", opacity: "0.4", overflow:"hidden"} : {}} className='sideNav'>
       <div className='sideNavHeader'><h3>[STREET/TRACK]</h3></div>
       <div  className='sideNavLink' onClick={handleClick}>Ninja</div>
       <div className='sideNavHeader'><h3>[STREET]</h3></div>

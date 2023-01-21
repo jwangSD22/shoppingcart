@@ -14,7 +14,7 @@ import ItemInCart from "./ItemInCart";
 //Update: new object array seems like it's required because using this method we can handle a different 
 //type of logic :: need to have an array that contains the TYPE of bike and the COUNT 
 
-function ShoppingCart({ cart, setCart }) {
+function ShoppingCart({ disabled, setDisabled, cart, setCart }) {
   const [final, setFinal] = useState([]);
 
   useEffect(() => {
@@ -50,8 +50,15 @@ function ShoppingCart({ cart, setCart }) {
     return total.toLocaleString("en-US");
   };
 
+
+
+
+
+    
+  
+
   return (
-    <div className="shoppingCart">
+    <div className="shoppingCart" style={disabled ? {display:"flex"} : {display:"none"} }>
       SHOPPING CART HERE
       <br></br>
       {/*CONDITIONAL RENDERING*/}
@@ -72,7 +79,11 @@ function ShoppingCart({ cart, setCart }) {
       )}
       <div>Total - ${getPrice()}.00</div>
       <div>Proceed to payment button</div>
-      <div>Back to shop</div>
+      <div onClick={()=>{
+        const myCart = document.getElementsByClassName('shoppingCart')
+        myCart[0].style.display='none'
+        setDisabled(false)
+              }}>Back to shop</div>
     </div>
   );
 }

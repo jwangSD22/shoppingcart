@@ -11,15 +11,19 @@ import ShoppingCart from "./ShoppingCart"
 function Catalog() {
 const [query,setQuery] = useState('')
 const [cart,setCart] = useState([])
+const [disabled,setDisabled] = useState('')
+
+
+
   return (
 <div className="catalog">
-      <Banner />
-      <Navbar query={query} setQuery={setQuery} />
+      <Banner disabled={disabled}/>
+      <Navbar disabled={disabled} setDisabled={setDisabled} query={query} setQuery={setQuery} />
 
       <div className="mainContent">
-        <Sidenav query={query} setQuery={setQuery} />
-        <Outlet context={[query,setQuery,cart,setCart]}/>
-        <ShoppingCart cart={cart} setCart={setCart}/>
+        <Sidenav disabled = {disabled} query={query} setQuery={setQuery} />
+        <Outlet context={[query,setQuery,cart,setCart,disabled,setDisabled]}/>
+        <ShoppingCart disabled={disabled} setDisabled={setDisabled} cart={cart} setCart={setCart}/>
       </div>
       <Footer />
 </div>

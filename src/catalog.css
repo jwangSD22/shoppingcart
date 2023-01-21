@@ -18,7 +18,8 @@ nav{
 
 
 .bikeDisplay{
-    background-color: #e5e4e9;
+    
+    background-color: #E5E4E9;
     width:100%;
     min-height:80vh;
     display:flex;
@@ -54,7 +55,7 @@ nav{
 .shoppingCart{
    
     background-color: aqua;
-    opacity:20%;
+    opacity:100%;
     display:none;
     flex-direction: column;
     height:80vh;
@@ -183,6 +184,8 @@ height:50vh;
 }
 
 .bikeThumbDiv{
+    background-color: #E5E4E9;
+    border:solid 2px black;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -225,4 +228,15 @@ height:50vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+nav > a {
+    color:white;
+
+}
+
+nav > a:visited {
+    color:white;
+
 }

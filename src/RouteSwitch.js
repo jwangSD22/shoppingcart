@@ -6,6 +6,7 @@ import Bikes from './Bikes'
 import BikePage from './BikePage'
 
 function RouteSwitch() {
+  
   return (
     <BrowserRouter>
     <Routes>

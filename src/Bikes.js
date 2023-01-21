@@ -2,7 +2,7 @@ import React from 'react'
 import data from './data'
 import {Link,useOutletContext} from 'react-router-dom'
 
-function Bikes() {
+function Bikes({disabled}) {
 const [query,setQuery] = useOutletContext()
 const array = []
 
@@ -14,6 +14,7 @@ const inputToArray = (item) => { array.push(
       <span className='thumbName'>{item.name}</span>
       
       <span className='thumbPrice'>Starting at ${item.price.toLocaleString('en-us')}</span>
+      <br />
   </div>
 )}
 
@@ -33,7 +34,7 @@ for (let item of filteredArr){
 }
 
   return (
-    <div className ="bikeDisplay">
+    <div style={disabled ? {pointerEvents: "none", opacity: "0.4", overflow:"hidden"} : {}} className ="bikeDisplay">
       <div className='bikeGrid'>{array}</div>
       </div>
   )
