@@ -3,16 +3,7 @@ import { useState, useEffect } from "react";
 import { v4 } from "uuid";
 import ItemInCart from "./ItemInCart";
 
-//right now, the useeffect hook is picking up any changes in the cart to create a whole BRAND NEW ARRAY every single time there is a change.
 
-//would it make more sense to create a function that generates components <ITEM IN CART /> that accepts props for all the necessities  such as price name, etc,
-// and the component could hold count in state on it's own individual component
-
-// this way, we wouldn't have to create this new state for FINAL, seems kinda redundant.
-
-
-//Update: new object array seems like it's required because using this method we can handle a different 
-//type of logic :: need to have an array that contains the TYPE of bike and the COUNT 
 
 function ShoppingCart({ disabled, setDisabled, cart, setCart }) {
   const [final, setFinal] = useState([]);
@@ -58,8 +49,11 @@ function ShoppingCart({ disabled, setDisabled, cart, setCart }) {
   
 
   return (
-    <div className="shoppingCart" style={disabled ? {display:"flex"} : {display:"none"} }>
-      SHOPPING CART HERE
+    <div className="shoppingCart" style={disabled ? {
+    display:"flex"} 
+    : 
+    {display:"none"} }>
+Your Shopping Cart
       <br></br>
       {/*CONDITIONAL RENDERING*/}
       {cart.length > 0 ? (
@@ -75,7 +69,7 @@ function ShoppingCart({ disabled, setDisabled, cart, setCart }) {
           />
         ))
       ) : (
-        <div>!!!!!!!!!!!!!!!!!!!!!!!!!!EMPTY CART!!!!!!!!!!!!!!!!!</div>
+        <div> Your bag is empty</div>
       )}
       <div>Total - ${getPrice()}.00</div>
       <div>Proceed to payment button</div>

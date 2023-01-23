@@ -2,6 +2,7 @@ import React from "react";
 import data from "./data";
 import { useParams, useOutletContext } from "react-router-dom";
 import RotatingImg from "./RotatingImg";
+import {BsFillCartPlusFill} from 'react-icons/bs'
 
 function BikePage() {
   const [query, setQuery, cart, setCart,disabled,setDisabled] = useOutletContext();
@@ -46,10 +47,10 @@ setDisabled(true)
                 </li>
               ))}
             </ul>
-            <div >STARTING AT: ${currentBike.price.toLocaleString('en-us')}.00
+            <div className="featureLeftCont"><h2>STARTING AT: ${currentBike.price.toLocaleString('en-us')}.00</h2>
               <br />
               <br />
-            <button onClick={increaseHandler}>Add to Cart</button>
+            <div onClick={increaseHandler}><h3>Add to Cart <BsFillCartPlusFill /></h3></div>
             </div>
             
           </div>

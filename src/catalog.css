@@ -1,3 +1,10 @@
+.topSticky{
+    position:sticky;
+    top:0px;
+    z-index:100;
+    display:flex;
+    flex-direction: column;
+}
 nav{
     position:relative;
     top:0px;
@@ -15,6 +22,9 @@ nav{
     z-index: 50;
 }
 
+.bannerDiv{
+    margin-bottom: -3px;
+}
 
 
 .bikeDisplay{
@@ -66,6 +76,7 @@ nav{
 
 
 .sideNav{
+    color:white;
     background-color: black;
     width:10%;
     display:flex;
@@ -154,7 +165,8 @@ a:visited{
 a{
     color:black;
     text-decoration: none;
-    border-bottom: solid 5px transparent
+    border-bottom: solid 5px transparent;
+    font-size: 1.25rem;
 
 }
 
@@ -213,6 +225,8 @@ height:50vh;
 .rotatingImgNav{
     display:flex;
     justify-content: center;
+    gap:20px;
+    font-size: 1.5rem;
 }
 
 .featureList{
@@ -230,13 +244,94 @@ height:50vh;
     align-items: center;
 }
 
+.featureLeftCont{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-nav > a {
+
+nav > .navLeft > a {
     color:white;
 
 }
 
-nav > a:visited {
+nav > .navLeft > a:visited {
     color:white;
 
 }
+
+nav{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.navLeft{
+    display:flex;
+    width:5vw;
+    justify-content: space-between;
+    margin-left:1vw;
+}
+
+.navRight{
+    display:flex;
+    width:30vw;
+    justify-content: space-between;
+}
+
+.rotatingImgNavBtn{
+    background-color: #E5E4E9;
+font-size: 2rem;
+padding:0px;
+border:none;
+margin:0px;
+}
+
+.rotatingImgNavBtn:hover{
+    background-color: #69BE28;
+
+    }
+
+
+.navInput{
+    height:1.5rem;
+    width:10vw;
+    border:none;
+    margin:5px;
+}
+
+.navCartBtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-size:1.25rem;
+    border-bottom: solid 5px transparent;
+    margin-right:1vw;
+
+}
+
+.navCartBtn:hover{
+    border-bottom: solid 5px #69BE28;
+    cursor: grab
+}
+
+.cartIcon{
+    font-size: 1.25rem;
+}
+
+.cartCounter{
+    display:flex;
+    font-size: 1.25rem;;
+    background-color: #69BE28;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width:1.75rem;
+    height:1.75rem;;
+    border-radius: 15%;
+}
+

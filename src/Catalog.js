@@ -17,8 +17,11 @@ const [disabled,setDisabled] = useState('')
 
   return (
 <div className="catalog">
-      <Banner disabled={disabled}/>
-      <Navbar disabled={disabled} setDisabled={setDisabled} query={query} setQuery={setQuery} />
+  <div className="topSticky">
+  <Banner disabled={disabled}/>
+      <Navbar cart = {cart} disabled={disabled} setDisabled={setDisabled} query={query} setQuery={setQuery} />
+
+  </div>
 
       <div className="mainContent">
         <Sidenav disabled = {disabled} query={query} setQuery={setQuery} />

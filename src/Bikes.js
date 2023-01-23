@@ -2,9 +2,12 @@ import React from 'react'
 import data from './data'
 import {Link,useOutletContext} from 'react-router-dom'
 
-function Bikes({disabled}) {
-const [query,setQuery] = useOutletContext()
+
+
+function Bikes() {
 const array = []
+const [query, setQuery, cart, setCart,disabled,setDisabled] = useOutletContext();
+
 
 const inputToArray = (item) => { array.push(
   <div key={item.id} className="bikeThumbDiv">

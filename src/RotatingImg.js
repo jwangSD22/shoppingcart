@@ -1,12 +1,15 @@
 import React from 'react'
 import { useState } from 'react';
+import {BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons/bs'
+
 
 
 
 function RotatingImg({currentBike}) {
     let [image, setImage] = useState(0);
     let rotatingImg = <img className = 'rotatingImg' src={currentBike.imgs[image]} alt = {currentBike.id+[image]} />
-  const clickIncHandler = ()=> {
+  const clickIncHandler = (e)=> {
+    e.stopPropagation();
     if(image===2){
         setImage(0)
     }
@@ -27,9 +30,9 @@ function RotatingImg({currentBike}) {
 
         <div className='rotatingImgNav'>
 
-            <div className='rotatingImgNavBtn' onClick={clickDecHandler}>Previous Button</div>
-            <div>O</div>
-            <div className='rotatingImgNavBtn' onClick={clickIncHandler}>Next Button</div>
+            <button className='rotatingImgNavBtn' onClick={clickDecHandler}><BsFillArrowLeftSquareFill /> </button>
+            <div></div>
+            <button className='rotatingImgNavBtn' onClick={clickIncHandler}><BsFillArrowRightSquareFill /></button>
         </div>
         </div>
   )

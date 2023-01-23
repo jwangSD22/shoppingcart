@@ -8,7 +8,7 @@ function Splash() {
       <div className='splashBox'>
   <h1>KAWASAKI</h1>
   <h2>Let the good times roll</h2>
-  <h2><Link to="/catalog/allbikes">FIND YOUR RIDE TODAY</Link></h2>
+  <h2><Link style={{color:'white',fontSize:"50px"}}to="/catalog/allbikes">FIND YOUR RIDE TODAY</Link></h2>
 </div>
 <video className="splashVideo" src={`${ninjavidsmall}`} autoPlay loop muted={true}></video>
     </div>
