@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 import Splash from './Splash'
 import Catalog from './Catalog'
 import Bikes from './Bikes'
@@ -8,7 +8,7 @@ import BikePage from './BikePage'
 function RouteSwitch() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
         <Route path ="/" element={<Splash />} />
 
@@ -20,7 +20,7 @@ function RouteSwitch() {
 
 
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
