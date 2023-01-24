@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import data from "./data";
 import { useParams, useOutletContext } from "react-router-dom";
 import RotatingImg from "./RotatingImg";
 import {BsFillCartPlusFill} from 'react-icons/bs'
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import 'animate.css'
 function BikePage() {
   const [query, setQuery, cart, setCart,disabled,setDisabled] = useOutletContext();
   const { id } = useParams();
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  })
+
   const increaseHandler = () => {
+
     setCart([...cart, currentBike]);
-const myCart = document.getElementsByClassName('shoppingCart')
-console.log(myCart)
-myCart[0].style.display = "flex"
-setDisabled(true)
+    setDisabled(true)
+
 
   }
 
@@ -27,7 +31,9 @@ setDisabled(true)
   return (
     <div style={disabled ? {pointerEvents: "none", opacity: "0.4", overflow:"hidden"} : {}} className="bikePageDisplay">
       <div className="bikeBannerbg">
-        <div className="bannerTitle">{currentBike.name}</div>
+       
+        <div className={`bannerTitle`}>{currentBike.name}</div>
+        
         <img className="bikeBanner" src={currentBike.banner} />
       </div>
 
@@ -38,20 +44,23 @@ setDisabled(true)
         </div>
 
         <div className="bikeBottom">
-        <RotatingImg currentBike={currentBike} />
+        <AnimationOnScroll animateIn="animate__fadeIn"><RotatingImg currentBike={currentBike} /></AnimationOnScroll>
+        
           <div className="featureLeft">
             <ul>
               {currentBike.features.map((item) => (
-                <li key={item} className="featureList">
-                  {item}
-                </li>
+               
+                 <AnimationOnScroll animateIn="animate__fadeInLeft"> <li key={item} className="featureList">{item}</li></AnimationOnScroll> 
+            
               ))}
             </ul>
+            <AnimationOnScroll animateIn="animate__fadeInLeft">
             <div className="featureLeftCont"><h2>STARTING AT: ${currentBike.price.toLocaleString('en-us')}.00</h2>
               <br />
               <br />
-            <div onClick={increaseHandler}><h3>Add to Cart <BsFillCartPlusFill /></h3></div>
+            <div className="bikePageATC" onClick={increaseHandler}><h3>Add to Cart <BsFillCartPlusFill /></h3></div>
             </div>
+            </AnimationOnScroll>
             
           </div>
 

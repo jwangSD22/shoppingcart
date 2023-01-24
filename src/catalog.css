@@ -19,7 +19,7 @@ nav{
 .banner{
     width:100%;
     height:auto;
-    z-index: 50;
+ 
 }
 
 .bannerDiv{
@@ -64,14 +64,18 @@ nav{
 
 .shoppingCart{
    
-    background-color: aqua;
+    background-color:#E5E4E9;
     opacity:100%;
     display:none;
     flex-direction: column;
-    height:80vh;
-    width:30%;
-    right:50px;
+    height:100vh;
+    width:33%;
+    right:0px;
+    top:0px;
     position:fixed;
+    overflow-y:auto;
+    padding:30px;
+    z-index:101
 }
 
 
@@ -84,6 +88,30 @@ nav{
     align-items:center;
     gap:10px;
     border-right: double 10px #69BE28
+
+}
+
+.sideNavHeader{
+    font-size: 1.25rem;
+    font-weight:bolder;
+    font-stretch:extra-expanded;
+    margin:20px;
+    font-style:normal;
+    padding:3px;
+    color:#69BE28
+}
+
+.sideNavLink{
+    border-bottom: solid 5px transparent;
+    transition:ease .25s
+    
+
+
+}
+
+.sideNavLink:hover{
+    cursor:grab;
+    border-bottom: solid 5px #69BE28
 
 }
 
@@ -122,7 +150,7 @@ h1{
 
 h2{
     font-size:2vw;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 3px black;
 
     color:white;
 }
@@ -290,8 +318,21 @@ border:none;
 margin:0px;
 }
 
+.bikePageATC{
+    font-size: 2rem;
+    border-bottom: solid 5px transparent;
+
+}
+
+.bikePageATC:hover{
+    cursor:grab;
+    border-bottom: solid 5px #69BE28;
+
+}
+
 .rotatingImgNavBtn:hover{
     background-color: #69BE28;
+    cursor:grab;
 
     }
 
@@ -333,5 +374,155 @@ margin:0px;
     width:1.75rem;
     height:1.75rem;;
     border-radius: 15%;
+    user-select: none;
 }
 
+
+.cartLeft{
+    display:flex;
+}
+
+.cartIncDec{
+    display:flex;
+    font-size: 2rem;
+    justify-content: left;
+    align-items: center;
+}
+
+.cartThumb{
+    background-color: rgba(241, 241, 241, 0.877);
+ 
+        width:10vw;
+    
+}
+
+.cartBikeName{
+    font-size: 1.25em;
+}
+
+.incdecCounter{
+    display:flex;
+    font-size: 0.70em;
+    justify-content: center;
+    align-items: center;;
+    background-color: white;
+    width:1.25em;
+    height:1.25em;
+    user-select: none;
+}
+
+.cartBtn:hover{
+    cursor:grab;
+}
+
+.cartHeader{
+    font-size:2.5em;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.itemInCart{
+    display:flex;
+    justify-content: space-between;
+    width:40rem;
+    background-color:  rgba(241, 241, 241, 0.877);
+    border-radius: 2%;
+    margin-bottom: 0.4em;
+}
+
+.subtotal{
+    margin-top: 2%;
+    font-size: 0.9em;
+}
+
+.checkout{
+    margin-top: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width:40rem;
+    height:5em;
+    background-color: #adcf92;
+    transition:ease 0.25s
+    
+}
+
+.checkout:hover{
+    cursor:grab;
+    background-color:#69BE28    
+    }
+
+.emptyBag{
+    height:75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    height:100%;
+    width:auto;
+}
+
+.cartLeftInfo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 5px;
+}
+
+.cartRight{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    user-select: none;
+}
+
+.removeAllBtn:hover{
+    color:black;
+    cursor:grab;
+}
+
+.removeAllBtn{
+    font-size:0.8em;
+    font-style: italic;
+    margin: 3px;
+    color:rgb(63, 63, 63);
+    user-select: none;
+}
+
+.xbutton:hover{
+cursor:grab;
+color:#69BE28    
+}
+
+.splashLink{
+    font-size: 4em;
+    color:white;
+    font-weight:500;
+    transition:ease 0.25s
+}
+
+.splashLink:hover{
+    cursor:grab;
+background-color: #69BE28;
+color:black;
+}
+
+.hiddenDiv{
+    background-color: transparent;
+    display:flex;
+    height:100vh;
+    width:65%;
+    left:0px;
+    top:0px;
+    position:fixed;
+   
+    z-index:999
+}
